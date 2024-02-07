@@ -22,8 +22,14 @@ public class App {
         Job job = Job.getInstance(new Configuration(), jobName);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
-        job.setMapperClass(Map.class);
-        job.setReducerClass(Reduce.class);
+
+        // David ou Goliath
+        //job.setMapperClass(Map.class);
+        //job.setReducerClass(Reduce.class);
+
+        // Nouvel ELO
+        job.setMapperClass(UpdateElo.class);
+
         job.setInputFormatClass(ChessFileInputFormat.class);
         job.setOutputFormatClass(TextOutputFormat.class);
         job.setJarByClass(Map.class);
