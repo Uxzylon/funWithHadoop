@@ -1,0 +1,22 @@
+{
+    "type" : "record",
+    "name" : "Record",
+    "fields" : [
+        { "name" : "id", "type" : ["null", "string"] },
+        { "name" : "rated", "type" : ["null", "string"] },
+        { "name" : "created_at", "type" : ["null", "string"] },
+        { "name" : "last_move_at", "type" : ["null", "string"] },
+        { "name" : "turns", "type" : ["null", "string"] },
+        { "name" : "victory_status", "type" : ["null", "string"] },
+        { "name" : "winner", "type" : ["null", "string"] },
+        { "name" : "increment_code", "type" : ["null", "string"] },
+        { "name" : "white_id", "type" : ["null", "string"] },
+        { "name" : "white_rating", "type" : ["null", "long"] },
+        { "name" : "black_id", "type" : ["null", "string"] },
+        { "name" : "black_rating", "type" : ["null", "long"] },
+        { "name" : "moves", "type" : ["null", "string"] },
+        { "name" : "opening_eco", "type" : ["null", "string"] },
+        { "name" : "opening_name", "type" : ["null", "string"] },
+        { "name" : "opening_ply", "type" : ["null", "string"] }
+    ]
+}
